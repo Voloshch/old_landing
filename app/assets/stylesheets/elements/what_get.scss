@@ -1,0 +1,44 @@
+.what_get {
+  background-color: #f7f7f8;
+  text-align: center;
+  padding-bottom: 4%;
+  margin-top: 8%;
+
+  h2 {
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  .get_list_image {
+    height: 125px;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-size: 100px;
+  }
+
+  .row .col-xl-2 {
+    &:nth-child(1) .get_list_image {
+      background-image: asset-url("landing/about/safe.svg");
+    }
+
+    &:nth-child(2) .get_list_image {
+      background-image: asset-url("landing/about/responsive.svg");
+    }
+
+    &:nth-child(3) .get_list_image {
+      background-image: asset-url("landing/about/base.svg");
+    }
+
+    &:nth-child(4) .get_list_image {
+      background-image: asset-url("landing/about/web-tools.svg");
+    }
+
+    &:nth-child(5) .get_list_image {
+      background-image: asset-url("landing/about/support.svg");
+    }
+
+    &:nth-child(6) .get_list_image {
+      background-image: asset-url("landing/about/lifetime.png");
+    }
+  }
+}

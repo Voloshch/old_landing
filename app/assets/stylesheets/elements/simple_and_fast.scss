@@ -1,0 +1,50 @@
+#sipmle_and_fast {
+
+  h2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .col_container {
+    position: relative;
+    width: 382px;
+    margin: 5% auto;
+
+    .blue_circle {
+      padding: 13px 24px 13px 24px;
+      text-align: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      background: linear-gradient(180deg, #0122b7 0%, #447ef9 100%);
+      margin-bottom: 40px;
+
+      h4 {
+        font-size: 36px;
+        line-height: 44px;
+        color: #ffffff;
+      }
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    .line {
+      position: absolute;
+      z-index: -1;
+      margin-left: 35px;
+      border: 1px solid #F5F5F5;
+      width: 1px;
+      height: 290px;
+    }
+
+    @media (max-width: 1199px) {
+      width: 92%;
+
+      .line {
+        margin-left: 35px;
+      }
+    }
+  }
+}

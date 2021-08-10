@@ -1,0 +1,106 @@
+#gpu-section {
+	.container {
+		width: 90%;
+	}
+
+	.gpu-list,
+	.gpu_advantages-list {
+		margin: 24px 0 16px 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.gpu-item,
+	.gpu_advantages-item {
+		width: 45%;
+		padding: 16px 0;
+		min-width: 400px;
+
+		.img_container {
+			display: flex;
+			height: 85px;
+			margin-bottom: 16px;
+
+			img {
+				margin-top: auto;
+			}
+		}
+	}
+
+	.gpu-item,
+	.gpu_advantages-item > img {
+		margin-bottom: 8px;
+	}
+
+	.gpu-item__title {
+		font-size: 24px;
+		line-height: 29px;
+		color: #000000;
+		font-weight: 500;
+	}
+
+	.gpu-item__desc,
+	.gpu_advantages-item__desc {
+		font-size: 16px;
+		line-height: 21px;
+	}
+
+	.gpu_advantages-item__title {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		color: #000000;
+	}
+
+	@media (max-width: 1150px) {
+		.gpu-item,
+		.gpu_advantages-item {
+			width: 45%;
+			padding: 16px 0;
+			min-width: 320px;
+		}
+
+		.gpu_advantages {
+			padding-top: 0.16px;
+		}
+	}
+
+	@media (max-width: 950px) {
+		.gpu-item {
+			width: 100%;
+			min-width: unset;
+		}
+
+		.gpu-item__title {
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 850px) {
+		.gpu_advantages {
+			padding-top: 1.6px;
+		}
+
+		.gpu_advantages-item {
+			width: 100%;
+			min-width: unset;
+		}
+
+		.gpu_advantages-item__title {
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 360px) {
+		.gpu-item__title,
+		.gpu_advantages-item__title {
+			font-size: 18px;
+		}
+
+		.gpu-item__desc,
+		.gpu_advantages-item__desc {
+			font-size: 14px;
+		}
+	}
+}

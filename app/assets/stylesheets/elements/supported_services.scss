@@ -1,0 +1,179 @@
+.supported_services_section {
+
+  .container {
+   padding: 50px 0;
+   color: #5e6479;
+   &.grey {
+     background: #F9F9F9;
+   }
+   a {
+     color: #5e6479;
+     font-weight: 500;
+ 
+     &:hover {
+       text-decoration: none;
+     }
+   }
+ 
+   h2 {
+     text-align: center;
+   }
+ 
+   #carousel-row {
+     margin: 40px 0;
+
+     .carousel_button {
+       .left {
+         margin-left: 90%;
+       }
+       -webkit-box-flex: 0;
+       flex: 0 0 15%;
+       max-width: 15%;
+       padding-right: unset;
+       padding-left: unset;        
+     }
+
+     .carousel {
+       -webkit-box-flex: 0;
+       flex: 0 0 70%;
+       max-width: 70%;
+     }
+
+     .alice-carousel__wrapper {
+       padding: 22px 0;
+     }
+
+     .alice-carousel__dots-item.__active {
+       background-color: #1b3ec5;
+     }
+ 
+     .item {
+       background: white;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       padding: 2px;
+       text-align: center;
+       border-radius: 15px;
+       height: 200px;
+       margin: 0 5px;
+ 
+       .img-container {
+         height: 75%;
+         position: relative;
+ 
+         img {
+           max-width: 90%;
+           max-height: 90%;
+           position: absolute;
+           left: 0;
+           right: 0;
+           top: 20px;
+           bottom: 0;
+           margin: auto;
+
+           &.hover {
+             display: none;
+           }
+         }
+       }
+       .txt-container {
+         p {
+           margin-top: 5px;
+           font-size: 18px;
+         }
+       }
+ 
+       &:hover {
+         .img-container {
+           .default {
+             display: none;
+           }
+ 
+           .hover {
+             display: block;
+           }
+         }
+       }
+     }
+ 
+     .button {
+       background-image: asset-url("icons/arrow.png");
+       cursor: pointer;      
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: 100% auto;
+       width: 10%;
+       height: 100%;
+
+       &#next {
+         -webkit-transform: rotate(180deg);
+         transform: rotate(180deg);
+       }
+ 
+       &:hover {
+         background-image: asset-url("icons/arrow-hover.png");
+       }
+     }
+
+   }
+
+   @media (max-width: 1199px) {
+     #carousel-row {
+       margin: 40px 0;
+
+       .carousel_button {
+         .left {
+           margin-left: 40%;
+         }
+         flex: 0 0 5%;
+         max-width: 5%;  
+       }
+       .carousel {
+         -webkit-box-flex: 0;
+         flex: 0 0 90%;
+         max-width: 90%;
+       }
+       .item {
+         height: 200px;
+       }
+       .button {
+         width: 50%;
+       }
+     }
+   }
+
+   @media (max-width: 991px) {
+     &.grey {
+       background: linear-gradient(90deg, #0122B6 0%, #0520A6 100%);
+       
+       h2 {
+         color: white;
+       }
+     }
+     #carousel-row .item  {
+       border-radius: 10px;  
+     }
+   }
+
+   @media (max-width: 600px) {
+     #carousel-row {
+       .item {
+         border-radius: 7px;
+       }
+       .button {
+         width: 60%;
+       }
+     }
+   }
+
+   @media (max-width: 400px) {
+     #carousel-row {
+       .carousel_button .left {
+         margin-left: 20%;
+       }
+       .button {
+         width: 80%;
+       }
+     }
+   }
+  }
+}

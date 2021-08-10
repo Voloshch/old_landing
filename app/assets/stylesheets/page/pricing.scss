@@ -1,0 +1,132 @@
+.pricing_main {
+    background-image: asset-url("landing/waves.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+
+    h1 {
+        font-size: 90px;
+    }
+
+    h6 {
+        margin: 2rem 0;
+    }
+
+    img {
+        width: 100%;
+        object-fit: none;
+        height: max(calc(100vh - 107px), 700px);
+        object-fit: cover;
+    }
+
+    .content {
+        position: absolute;
+        padding: calc(50vh - 160px) 5% 0 5%;
+        width: 100%;
+
+        p {
+            margin: 1rem 0;
+        }
+    }
+}
+
+.how_it_work {
+    color: black;
+    padding: 2rem 5%;
+
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        width: 800px;
+    }
+
+    ul {
+        margin: 1rem 1rem 2rem;
+    }
+
+    table {
+        border: 1px solid black;
+        width: 100%;
+        margin-top: 2rem;
+
+        thead {
+            background: black;
+            color: white;
+            padding: 14px 34px;
+        }
+
+        tbody {
+            color: black;
+        }
+
+        .blue {
+            background: #F8F9FE;
+            color: black;
+        }
+
+        th {
+            padding: 14px 34px;
+            width: 400px;
+            font-weight: normal;
+        }
+    }
+
+    .small-font {
+        margin: 1rem 0 3rem;
+        font-size: 14px;
+    }
+
+    .details {
+        margin-top: 2rem;
+    }
+
+    .hardware {
+        background: #F8F9FE;
+        padding: 32px 36px;
+        display: flex;
+        column-gap: 5rem;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.5rem;
+        }
+    }
+
+    label {
+        width: 200px;
+        position: relative;
+    }
+
+    select {
+        width: 71px;
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+.configure {
+    background: linear-gradient(180deg, #3C1CC8 0%, #522BBE 100%);
+    padding: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        width: 800px;
+    }
+
+    .btn {
+        color: #000000;
+        background: white;
+    }
+}

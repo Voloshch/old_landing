@@ -1,0 +1,57 @@
+.disk_capabilities {
+  background: #F9F9F9;
+
+  .container {
+    padding: 5% 6%;
+  }
+
+  .line {
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 43.5%;
+    border: 1px solid #E7E7E7;
+    height: 320px;
+  }
+
+  .column {
+    width: 1016px;
+    height: 360px;
+    margin: 5% auto 0;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  p {
+    min-height: 60px;
+  }
+
+  .number {
+    font-weight: 500;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  @media (max-width: 1199px) {
+    background: linear-gradient(90deg, #0122B6 0%, #0520A6 100%);
+    
+    h2, p {
+      color: white;
+    }
+
+    .line {
+      display: none;
+    }
+
+    .column {
+      width: unset;
+      height: unset;
+      column-count: unset;
+    }
+  }
+}

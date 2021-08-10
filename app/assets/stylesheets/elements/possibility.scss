@@ -1,0 +1,30 @@
+.possibility-background {
+	background-image: asset-url('landing/services/devops_service/control.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-x: 75%;
+	background-position-y: 25%;
+}
+
+.possibility-wrapper {
+	margin-top: 80px;
+}
+
+.possibility-text {
+	font-size: 18px;
+	line-height: 22px;
+	margin: 30px 0;
+	color: #000000;
+}
+
+@media (max-width: 900px) {
+	.possibility-wrapper {
+		margin: 20px 0;
+	}
+}
+
+@media (max-width: 1250px) {
+	.possibility-background {
+		background-image:none;
+	}
+}

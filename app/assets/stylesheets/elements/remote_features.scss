@@ -1,0 +1,67 @@
+.remote_features {
+  background: #F9F9F9;
+  padding: 5% 0;
+
+  .cont {
+    max-width: 1199px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feature {
+    width: 50%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  img {
+    margin: auto;
+  }
+
+  .text {
+    width: calc(100% - 160px);
+  }
+
+  @media(max-width: 1199px) {
+    .cont {
+      width: 90%;
+    }
+  
+    .feature {
+      width: 100%;
+    }
+
+    img {
+      width: 11%;
+      min-width: 60px;
+    }
+
+    .text {
+      width: 85%;
+    }
+  }
+
+  @media(max-width: 500px) {
+    .cont {
+      display: inherit;
+    }
+
+    .feature {
+      display: inherit;
+    }
+
+    .img {
+      width: 11%;
+      min-width: 60px;
+    }
+
+    .text {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}

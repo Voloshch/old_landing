@@ -1,0 +1,425 @@
+.home {
+    padding-top: clamp(90px, 15vh, 107px);
+
+    .bold {
+        font-weight: bold;
+    }
+    
+    .normal {
+        font-weight: normal;
+    }
+    
+    h1 {
+        font-size: clamp(165%, 3vw, 600%);
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: clamp(40px, 3vw, 48px);
+        font-weight: 800;
+    }
+    
+    h3 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    h4 {
+        font-size: clamp(20px, 2vw, 24px);
+        line-height: 29px;
+    }
+    
+    h5 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    h6 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .small-font {
+        font-size: 14px;
+    }
+}
+
+.main {
+    position: relative;
+    display: flex;
+    color: white;
+    height: max(calc(100vh - 107px), calc(100% + 100px));
+
+    .container {
+        color: white;
+    }
+
+    &__img {
+        height: calc(100vh - 108px);
+        min-height: 600px;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__content {
+        position: absolute;
+        padding: calc(50vh - 240px) 5% 0 5%;
+        width: 100%;
+    }
+
+    h1 {
+        width: clamp(303px, 41%, 540px);
+        line-height: 100%;
+        margin-bottom: 1rem;
+    }
+
+    h5 {
+        font-weight: 500;
+        font-size: clamp(16px, 5vw, 20px);
+        line-height: 24px;
+        width: clamp(275px, 48%, 590px);
+    }
+
+    .flex {
+        margin-top: 2rem;
+        column-gap: 1rem;
+        row-gap: 1rem;
+
+        &.ru button {
+            width: 208px;
+        }
+
+        &.en button {
+            width: 158px;
+        }
+    }
+}
+
+.features {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 460px) minmax(280px, 1600px));
+    grid-row-gap: 2rem;
+    grid-column-gap: 10%;
+    color: black;
+
+    h3 {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    p {
+        margin: 2rem 0;
+    }
+
+    &__description {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+        grid-column-gap: 5%;
+        grid-row-gap: 2rem;
+
+        svg {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 6%;
+    background-color: black;
+    color: white;
+    height: 100%;
+    align-items: center;
+    column-gap: 4%;
+    row-gap: 2rem;
+    overflow: hidden;
+
+    &__content {
+        width: 48%;
+        min-width: 506px;
+        flex-wrap: wrap;
+        row-gap: 3rem;
+    }
+
+    img {
+        width: 48%;
+        height: 100%;
+    }
+}
+
+.interface {
+    &__title {
+        text-align: center;
+        margin: 3rem 0 1rem;
+    }
+
+    .slider {
+        width: 100%;
+        color: white;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(179.97deg, #4800A5 0.02%, #7000E0 99.98%);
+
+        &__content {
+            left: 0;
+            top: 0;
+            width: calc(400vw - 60px);
+            height: 100%;
+            display: flex;
+            transform: translateX(0vw);
+            -webkit-transition: .5s all linear;
+            transition: .5s all linear;
+            will-change: transform;
+        }
+
+        .arrow {
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            &.revert {
+                transform: translateY(-50%) rotate(180deg);
+                right: 50px;
+                left: auto;
+            }
+        }
+
+    }
+
+    .slide {
+        width: 100%;
+        position: relative;
+        display: flex;
+
+        img {
+            width: 100%;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        &__content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10%;
+            width: 19%;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        button {
+            background: transparent;
+            border: 1.5px solid white;
+            margin-top: 1rem;
+        }
+    }
+
+    .opportunities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        margin: 5%;
+
+        .item {
+            border: 1px solid #000000;
+            border-radius: 3px;
+            padding: 40px 15px;
+        }
+    }
+}
+
+.howitworks {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5rem 5%;
+
+    .steps {
+        display: inherit;
+        width: clamp(290px, 100%, 1100px);
+        justify-content: space-between;
+        margin: 4rem 0;
+    }
+
+    .step {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+        color: white;
+
+        &::after {
+            content: none;
+        }
+        
+        &::before {
+            content: none;
+        }
+
+        &:not(:first-child) .circle{
+            border: 2px solid #FF5C00;
+
+            &::after {
+                content: "";
+                display: block;
+                text-align: center;
+                width: 119%;
+                height: 2px;
+                position: absolute;
+                background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+                left: -119%;
+            }
+        }
+
+        &:not(:last-child) .circle{
+            border: 2px solid white;
+            z-index: 2;
+        }
+
+        &:last-child .circle{
+            border: 2px solid #FF5C00;
+
+            &::after {
+                background: linear-gradient(90deg, #000000 0%, #FF5C00 100%);
+            }
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .circle {
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(26px, 6vw, 64px);
+        width: clamp(56px, 12vw, 144px);
+        height: clamp(56px, 12vw, 144px);
+        border: 2px solid white;
+        border-radius: 50%;
+        position: relative;
+        background: black;
+    }
+}
+
+.infrastructure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+    column-gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    row-gap: 2rem;
+
+    ul {
+        padding-left: 20px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .services {
+        justify-content: center;
+
+        &__content {
+            min-width: 100%;
+        }
+
+        img {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .features {
+        grid-template-columns: repeat(auto-fit, 100%);
+
+        &__description {
+            grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        }
+    }
+
+    .interface {
+        .slider .arrow {
+            display: none;
+        }
+
+        .slide {
+            padding: 1%;
+            display: initial;
+    
+            .slide__content {
+                position: initial;
+                top: 0;
+                transform: none;
+                right: 0;
+                width: 0;
+                padding: 0;
+                width: 80%;
+                margin: auto;
+            }
+    
+            p {
+                display: none;
+            }
+    
+            button {
+                margin-top: 1rem;
+            }
+    
+            .desktop {
+                display: none;
+            }
+    
+            .mobile {
+                display: block;
+                width: 90%;
+                margin: 2rem auto;
+                min-width: 280px;
+            }
+        }
+    }
+
+    .howitworks {
+        .steps {
+            flex-direction: column;
+            row-gap: 6vw;
+        }
+
+        .step {
+            flex-direction: row;
+            column-gap: 5vw;
+
+            &:not(:last-child) .circle::after {
+                transform: rotate(90deg);
+                left: 28%;
+                top: -23%;
+                width: 44%;
+            }
+
+            &:last-child .circle::after {
+                transform: rotate(90deg);
+                left: 28%;
+                top: -23%;
+                width: 44%;
+            }
+        }
+    }
+}

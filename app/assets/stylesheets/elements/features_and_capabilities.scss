@@ -1,0 +1,125 @@
+.feature_and_capabilities {
+  margin: 0 auto;
+  text-align: left;
+
+  &.opportunities, &.openshift {
+    width: 80%;
+  }
+
+  .col-xl-6 {
+    background-repeat: no-repeat;
+    background-position-y: 6px;
+    padding-left: 90px;
+    margin-top: 5%;
+
+    &.virtual_server {
+      background-image: asset-url("icons/storage.svg");
+    }
+    &.resource_management {
+      background-image: asset-url("landing/services/compute/resour.png");
+    }
+    &.backups {
+      background-image: asset-url("icons/backups.png");
+    }
+    &.monitoring {
+      background-image: asset-url("landing/services/compute/monitoring.svg");
+    }
+    &.sharing {
+      background-image: asset-url("landing/services/compute/share.svg");
+    }
+    &.clonning {
+      background-image: asset-url("landing/services/compute/clone.png");
+    }
+    &.networks {
+      background-image: asset-url("landing/services/compute/net_wifi.png");
+    }
+    &.security {
+      background-image: asset-url("landing/services/compute/safe.png");
+    }
+    &.html5 {
+      background-image: asset-url("landing/services/compute/html.svg");
+    }
+    &.support {
+      background-image: asset-url("icons/support.png");
+    }
+    &.guarantee {
+      background-image: asset-url("icons/guarantee.png");
+    }
+    &.compliance {
+      background-image: asset-url("icons/compliance.svg");
+    }
+    &.types {
+      background-image: asset-url("icons/types.png");
+    }
+    &.business {
+      background-image: asset-url("icons/business.svg");
+    }
+    &.aggregated {
+      background-image: asset-url("icons/aggregated.png");
+    }
+    &.kubernetes {
+      background-image: asset-url("landing/services/openshift/kubernetes.png");
+    }
+    &.registry {
+      background-image: asset-url("landing/services/openshift/register.png");
+    }
+    &.ui {
+      background-image: asset-url("landing/services/openshift/self_service.png");
+    }
+    &.languages {
+      background-image: asset-url("landing/services/openshift/catalog.png");
+    }
+    &.routing {
+      background-image: asset-url("landing/services/openshift/rout.svg");
+    }
+    &.hybrid {
+      background-image: asset-url("landing/services/openshift/hybrid.svg");
+    }
+    &.automation {
+      background-image: asset-url("landing/services/openshift/clone.png");
+    }
+    &.availability {
+      background-image: asset-url("landing/about/lifetime.png");
+      background-size: 80px;
+    }
+    &.devopsImg {
+      background-image: asset-url("landing/services/openshift/devops.png");
+    }
+    &.security {
+      background-image: asset-url("landing/about/safe.svg");
+      background-size: 75px;
+    }
+    
+  }
+  
+  .col-xl-12 {
+    background-repeat: no-repeat;
+    background-position-y: 6px;
+    padding-left: 90px;
+    margin-top: 5%;
+    
+    &.networking {
+      background-image: asset-url("landing/services/networking/networks.png");
+    }
+    &.route {
+      background-image: asset-url("landing/services/networking/routing.png");
+    }
+    &.firewall {
+      background-image: asset-url("landing/services/networking/firewall.png");
+    }
+    
+  }
+
+  @media (max-width: 1199px) {
+    &.opportunities, &.openshift {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .col-xl-6 {
+      padding-left: 80px;
+      background-size: 66px;
+    }
+  }
+}

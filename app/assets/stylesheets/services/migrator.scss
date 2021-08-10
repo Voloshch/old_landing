@@ -1,0 +1,234 @@
+.migrator {
+	a {
+		text-decoration: none;
+	}
+	.migrator-bottom {
+		position: relative;
+		top: 0;
+		transition: top ease 0.5s;
+	}
+
+	.migrator-bottom:hover {
+		top: -5px;
+	}
+	.migrator-wrapper {
+		.center-block {
+			margin: 0 auto;
+		}
+
+		.possibility {
+			text-align: center;
+		}
+
+		.container {
+			padding: 0 15%;
+		}
+
+		.wrapper {
+			padding: 5% 0;
+		}
+
+		h2 {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 26px;
+			color: #000000;
+		}
+
+		h3 {
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: 600;
+			color: #000000;
+		}
+
+		p {
+			font-weight: normal;
+			font-size: 18px;
+			color: #000000;
+		}
+
+		.resourses-migrator {
+			margin-bottom: 3%;
+
+			strong {
+				font-weight: 500;
+			}
+		}
+
+		.step-migrator {
+			margin-bottom: 3%;
+
+			a {
+				color: #000aff;
+			}
+
+			h2 {
+				margin-bottom: 2%;
+			}
+
+			.stepProgress {
+				position: relative;
+				padding-left: 45px;
+				list-style: none;
+			}
+
+			.stepProgress-item {
+				position: relative;
+				counter-increment: list;
+				padding-bottom: 20px;
+			}
+
+			.stepProgress-item:last-child::before {
+				border-left: none;
+			}
+
+			.stepProgress-item::before {
+				display: inline-block;
+				content: '';
+				position: absolute;
+				top: 5px;
+				left: -32px;
+				border-left: 2px solid #e3e3e3;
+				height: 100%;
+				width: 10px;
+			}
+
+			.stepProgress-item::after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				left: -37px;
+				top: 5px;
+				width: 12px;
+				height: 12px;
+				border: 2px solid #e3e3e3;
+				border-radius: 50%;
+				background-color: #e3e3e3;
+			}
+		}
+
+		.appraisal {
+			position: relative;
+
+			h2 {
+				margin-bottom: 3%;
+			}
+
+			p {
+				line-height: 22px;
+			}
+
+			.appraisal-email {
+				padding-left: 30px;
+				color: #4870ff;
+				display: inline;
+			}
+			.appraisal-desc {
+				display: inline;
+			}
+
+			.appraisal-email::before {
+				position: absolute;
+				width: 22px;
+				height: 22px;
+				left: 0;
+				content: '';
+				background-image: asset-url('landing/services/migrator/email.svg');
+				background-repeat: no-repeat;
+			}
+		}
+
+		.benefits-block {
+			margin: 3%;
+		}
+
+		.tools {
+			background: #1f1f1f;
+
+			h2,
+			p {
+				color: #ffffff;
+			}
+		}
+
+		.migratorImg {
+			background: #f9f9f9;
+
+			p {
+				margin-top: 6%;
+				font-size: 14px;
+				font-weight: 500;
+			}
+		}
+	}
+
+	@media (max-width: 991px) {
+		.migratorImg {
+			.practice_block {
+				padding-top: 7%;
+				margin-top: 20px;
+				min-width: 50%;
+				height: 160px;
+			}
+
+			img {
+				height: 90px;
+				width: 100px;
+			}
+		}
+	}
+
+	@media (max-width: 770px) {
+		.migratorImg .practice_block {
+				padding-top: 10%;
+				min-width: 70%;
+		}
+	}
+
+
+	@media (max-width: 450px) {
+		.migrator-wrapper {
+			p {
+				font-size: 14px;
+			}
+
+			.container {
+				padding: 0 7%;
+			}
+			
+			h2 {
+				font-size: 18px;
+			}
+		}
+
+		.step-migrator {
+			.stepProgress {
+				margin-top: 5%;
+			}
+
+			span {
+				font-size: 14px;
+			}
+		}
+
+		.appraisal h2 {
+				margin: 2%;
+		}
+
+		.benefits-block .feature_and_capabilities .col-xl-6 {
+				padding: 0;
+		}
+
+		.migratorImg {
+			h2 {
+				font-size: 18px;
+				margin: 5%;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+}

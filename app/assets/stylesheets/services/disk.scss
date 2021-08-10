@@ -1,0 +1,50 @@
+.service_disk_section {
+  .second {
+
+    .row {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    .left {
+      margin-left: auto;
+      width: 500px;
+    }
+
+    .right {
+      margin-right: auto;
+      width: 500px;
+      margin-left: 1%;
+    }
+
+    .cloud_img {
+      text-align: center;
+
+      img {
+        width: 230px;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .left, .right {
+        margin-left: unset;
+        margin-right: unset;
+        width: 100%;
+      }
+
+      h3 {
+        margin-top: 5%;
+      }
+
+      .cloud_img img {
+          width: 300px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .cloud_img img {
+        width: 47%;
+      }
+    }
+  }
+}

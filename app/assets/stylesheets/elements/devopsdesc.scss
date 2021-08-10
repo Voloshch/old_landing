@@ -1,0 +1,70 @@
+.section-wrapper {
+	margin: 0 15%;
+}
+
+.section-dark {
+	background-color: #232323;
+}
+
+.devops-wrapper {
+	width: 100%;
+}
+.devops-element{
+	padding: 0;
+}
+
+.devops-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: #000000;
+}
+
+.devops-text {
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000000;
+	padding-bottom: 20px;
+}
+
+.devops-list {
+	margin-top: 55px;
+}
+
+.display-lg {
+	display: none;
+}
+.display-md {
+	display: none;
+}
+.display-sm {
+	display: none;
+}
+
+@media (min-width: 1199px) {
+	.display-lg {
+		display: block;
+	}
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+	.display-md {
+		display: block;
+	}
+
+	.section-wrapper {
+		margin: 0 5%;
+	}
+}
+
+@media (max-width: 700px) {
+	.display-sm {
+		display: block;
+		margin-top: 1em;
+	}
+
+	.section-wrapper {
+		margin: 0 3%;
+	}
+}

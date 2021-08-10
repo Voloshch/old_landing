@@ -1,0 +1,201 @@
+.select {
+  cursor: pointer;
+
+  &.lang:hover .main.lang {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .main {
+    cursor: pointer;
+    height: 32px;
+    background: transparent;
+    border: unset;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    outline: unset;
+
+    &.lang {
+      width: 106px;
+      border-radius: 5px;
+      background: linear-gradient(180deg, #1528D2 -20%, #4E8AFF 99.67%);;
+    }
+
+    &.services {
+      width: 117px;
+    }
+
+    &.products {
+      width: 110px;
+    }
+
+    &.about {
+      width: 108px;
+    }
+
+    &:after {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: .255em;
+      vertical-align: .16em;
+      content: "";
+      border-top: .3em solid;
+      border-right: .3em solid transparent;
+      border-bottom: 0;
+      border-left: .3em solid transparent;
+    }
+
+    &.visible {
+      background: #0027D6;
+    }
+  }
+  
+  .options {
+    position: absolute;
+
+    &.lang {
+      width: 106px;
+
+      :nth-child(3) {
+        border-radius: 0 0 5px 5px;
+        padding-bottom: 4px;
+        height: 32px;
+      }
+
+      button {
+        width: 106px;
+      }
+    }
+
+    &.services {
+      width: 117px;
+
+      :nth-child(10) {
+        button {
+          border-radius: 0 0 5px 5px;
+          padding-bottom: 4px;
+          height: 32px;
+        }
+      }
+
+      button {
+        width: 117px;
+      }
+    }
+
+    &.products {
+      width: 160px;
+
+      :nth-child(1) {
+        border-radius: 0 5px 5px 5px;
+        padding: 5px 0;
+        height: 32px;
+      }
+
+      button {
+        width: 160px;
+      }
+    }
+
+    &.about {
+      width: 140px;
+
+      :nth-child(1) {
+        button {
+          border-radius: 0 5px 0 0;
+          padding: 5px 0;
+          height: 32px;
+        }
+      }
+
+      :nth-child(5) {
+        button {
+          border-radius: 0 0 5px 5px;
+          padding-bottom: 4px;
+          height: min-content;
+        }
+      }
+
+      button {
+        width: 140px;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      height: 28px;
+      background: #0027D6;
+      border: unset;
+      color: white;
+      outline: unset;
+  
+      &:hover {
+        background: #153AE3;
+      }
+    }
+  
+    &.hidden {
+      display: none;
+    }
+  
+  }
+
+  @media (max-width: 1199px) {
+    width: 88%;
+
+    &.lang {
+      display: none;
+    }
+    
+    .main { 
+      height: unset;
+
+      &.lang, &.services, &.products, &.about {
+        width: unset;
+      }
+
+      &.visible {
+        background: unset;
+      }
+    }
+
+    .options {
+      margin-left: 40px;
+      position: unset;
+
+      button {
+        background: unset;
+    
+        &:hover {
+          background: unset;
+        }
+      }
+
+      &.services button {
+        width: unset;
+      }
+
+      &.products {
+        width: unset;
+
+        button {
+          width: unset;
+        }
+      }
+
+      &.about {
+        width: 246px;
+
+        button {
+          width: unset;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .options.about {
+      width: 154px;
+    }
+  }
+}

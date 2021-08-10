@@ -1,0 +1,108 @@
+.compute_carousel {
+  h3 {
+    padding: 50px 0 20px;
+  }
+  
+  .alice-carousel {
+    width: 80%;
+  }
+  
+  .alice-carousel__wrapper {
+    padding: 22px 0;
+  }
+  
+  .item {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2px;
+    border-radius: 15px;
+    height: 200px;
+    margin: 0 5px;
+    
+    .img-container {
+      height: 75%;
+      position: relative;
+  
+      img {
+        max-height: 85%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  
+    p {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  
+    &.redhat {
+      p {
+        margin: -12px auto 0;
+        width: 142px;
+        position: relative;
+        line-height: 24px;
+      }
+    }
+  }
+  
+  .but {
+    display: none;
+  }
+  
+  .button {
+    background-image: asset-url("icons/arrow.png");
+    cursor: pointer;      
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 100%;
+  
+    &.next {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  
+    &:hover {
+      background-image: asset-url("icons/arrow-hover.png");
+    }
+  }
+  
+  
+  @media (max-width: 1700px) {
+    .but {
+      display: inline;
+      margin: 0 auto;
+      width: 3%;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .alice-carousel {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .item {
+      border-radius: 5px;
+    }
+  
+    .button {
+      width: 20px;
+    }
+  
+    .but {
+      width: unset;
+    }
+  }
+    
+  @media (max-width: 450px) {
+    .alice-carousel {
+      width: 87%;
+    }
+  }
+}

@@ -1,0 +1,197 @@
+#form {
+
+  &.remote {
+    width: 80%;
+    margin: auto;
+  }
+
+  &.try_cloud {
+    width: 45%;
+    margin: auto 0;
+  }
+
+  input {
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position-x: 22px;
+  
+    &:focus {
+      border: 2px solid #4677F9;
+      box-sizing: border-box;
+      box-shadow: none;
+    }
+    &.username {
+      background-image: asset-url("icons/GreyMan.png");
+      background-position-y: 10px;
+      &:focus {
+        background-image: asset-url("icons/BlueMan.svg");
+      }
+    }
+    &.email {
+      background-image: asset-url("icons/GreyLetter.svg");
+      background-position-y: 14px;
+      &:focus {
+        background-image: asset-url("icons/BlueLetter.svg");
+      }
+      &.invalid {
+        border: 2px solid #cc2936;
+        color: #cc2936;
+        background-image: asset-url("icons/RedLetter.svg");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  
+  .form-control {
+    border-radius: 10px;
+    margin: 5% 0;
+    font-size: 20px;
+    padding-left: 70px;
+  }
+  
+  #notes {
+    height: 125px;
+    padding: 25px 25px;
+    resize: none;
+    overflow: hidden;
+  
+    &:focus {
+      border: 2px solid #4677F9;
+      box-sizing: border-box;
+      box-shadow: none;
+    }
+  }
+  
+
+  text-align: left;
+
+  button {
+    &.disabled {
+      background: #E3E4E8;
+    }
+  }
+
+  .visibleText {
+    text-align: left;
+    color: #C1C1C1;
+  
+    p {
+      margin-top:3%;
+    }
+  }
+  
+  .hiddenText {
+    display: none;
+  }
+  
+  @media (max-width: 1199px) {
+    text-align: center;
+
+    &.try_cloud {
+      width: 70%;
+      min-width: 300px;
+    }
+
+    input {
+      border: 2px solid #F5F5F5;
+      box-sizing: border-box;
+      color: white;
+      height: 60px;
+      background-color: rgba(0,0,0,0);
+      background-position-x: 16px;
+      
+      &::placeholder {
+        color: white;
+        opacity: 0.8; 
+      }
+  
+      &:focus {
+        box-sizing: border-box;
+        box-shadow: none;
+        border: 2px solid #448BF9;
+  
+        &::placeholder {
+          color: #448BF9;
+        }
+      }
+  
+      &.username {
+        background-image: asset-url("icons/WhiteMan.svg");
+  
+        &:focus {
+          background-image: asset-url("icons/BlueMan.svg");
+        }
+      }
+  
+      &.email {
+        background-image: asset-url("icons/WhiteLetter.svg");
+  
+        &:focus {
+          background-image: asset-url("icons/BlueLetter.svg");
+        }
+  
+        &.invalid {
+          background-image: asset-url("icons/RedLetter.svg");
+        }
+      }
+    }
+  
+    .visibleText {
+      text-align: center;
+    }
+  
+    :-ms-input-placeholder {
+      color: white;
+    }
+    
+    #notes {
+      color: white;
+      border: 2px solid #F5F5F5;
+      box-sizing: border-box;
+      background-color: rgba(0,0,0,0);
+  
+      &::placeholder {
+        color: white;
+        opacity: 0.8; 
+      }
+  
+      &:focus {
+        box-sizing: border-box;
+        box-shadow: none;
+        border: 2px solid #448BF9;
+        &::placeholder {
+          color: #448BF9;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 450px) {
+    input {
+      height: 50px;
+  
+      &.username {
+        background-position-y: 5px;
+      }
+  
+      &.email {
+        background-position-y: 10px;
+      }
+    }
+  
+    .form-control {
+      font-size: 18px;
+      padding-left: 57px;
+    }
+  
+    #notes {
+      padding: 15px 15px;
+    }
+  
+    button{        
+      min-width: 195px;
+      min-height: 55px;
+      font-size: 22px;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.service_devops_section {
+  color: #414554;
+  
+  h2 {
+    padding-bottom: 3%;
+  }
+
+  .circle_life {
+    margin: 5% 0;
+    text-align: center;
+
+    .text {
+      width: 660px;
+      margin: 0 auto;
+      margin-bottom: 3%;
+    }
+
+    img {
+      width: 600px;
+    }
+  }
+
+  .base_background {
+    padding: 5% 0;
+    text-align: center;
+
+    img {
+      width: 300px;
+    }
+
+    .text {
+      margin: 0 auto;
+      margin-top: 3%;
+      width: 800px;
+    }
+  }
+
+  #features {
+    padding: 5% 0;
+    background: #F9F9F9;
+
+    h2 {
+      text-align: center;
+    }
+
+    .line {
+      position: absolute;
+      margin-left: 345px;
+      border: 2px solid #EAEAEA;
+      height: 336px;
+      margin-top: -15px;
+
+      &.two {
+        margin-left: 701px;
+      }
+    }
+
+    .row {
+      width: 1070px;
+      margin: 0 auto;
+    }
+
+    .featureText {
+      width: 29%;
+      margin: 0 2%;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    #features {
+      .line {
+        display: none;
+      }
+
+      p {
+        margin-bottom: 5%;
+      }
+
+      .row, .featureText {
+        width: 100%;
+        margin: unset;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .circle_life .text {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 5%;
+      text-align: left;
+    }
+
+    .base_background {
+      img {
+        display: none;
+      }
+  
+      .text {
+        width: 90%;
+        text-align: left;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .circle_life img {
+        width: 80%;
+    }
+
+    @media (max-width: 450px) {
+      .circle_life {
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

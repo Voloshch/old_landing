@@ -1,0 +1,77 @@
+.remote_request {
+  background-image: asset-url("landing/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+
+  .cont {
+    padding-top: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1150px;
+    margin: auto;
+
+    .remote_info {
+      margin-top: 60px;
+
+      .article {
+        display: flex;
+
+        .square {
+          width: 12px;
+          height: 12px;
+          background: white;
+          border-radius: 2px;
+          margin: 6px 12px 0 0;
+        }
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .form {
+      width: 505px;
+      height: 481px;
+      background: rgba(34, 34, 34, 0.3);
+      background-blend-mode: multiply;
+      border-radius: 30px;
+      margin: 0 0 10vh auto;
+
+      h2 {
+        width: 80%;
+        margin: 8% auto;
+      }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .cont {
+      width: 80%;
+  
+      .remote_info {
+        margin: auto;
+        width: 500px;
+      }
+  
+      .form {
+        height: unset;
+        padding: 0 0 10% 0;
+        margin: 20vh auto;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .cont h2 {
+      font-size: 24px;
+    }
+  }
+}

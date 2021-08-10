@@ -1,0 +1,132 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  text-size-adjust: 80%;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 6%;
+  color: #414554;
+}
+
+.product_button {
+  border: 2px solid white;
+  width: 183px;
+  height: 50px;
+  border-radius: 23px;
+  color: white;
+  font-size: 18px;
+  background: transparent;
+
+  &:hover {
+    background:white;
+    color:#222DB4;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 46px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  height: max-content;
+  width: max-content;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.container {
+  padding: 0 5%;
+}
+
+.btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 3px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px 18px;
+  justify-content: center;
+
+  &.cloud {
+    background: linear-gradient(90deg, #6501F9 0%, #6201FE 106.85%);
+    min-height: initial !important;
+  }
+
+  &.black {
+    background: black;
+    border: 1.5px solid #FFFFFF;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.col {
+    flex-direction: column;
+  }
+
+  &.row {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+}

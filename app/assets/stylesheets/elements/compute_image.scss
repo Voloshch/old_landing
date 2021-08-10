@@ -1,0 +1,12 @@
+.section_compute_image {
+  padding: 5% 0;
+  background: #F5F5F5;
+  text-align: center;
+
+  @media (max-width: 1199px) {
+    h2 {
+      font-weight: normal;
+      text-align: left;
+    }
+  }
+}

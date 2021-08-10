@@ -1,0 +1,208 @@
+.admin {
+  position: absolute;
+  width: 100%;
+
+  .hidden {
+    display: none;
+  }
+
+  .head_buttons {
+    position: absolute;
+    top: 15px;
+    left: 7%;
+
+    button {
+      margin-right: 10px;
+    }
+  }
+
+  .logout {
+    position: absolute;
+    top: 15px;
+    right: 7%;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  .bottom {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+
+    &.white {
+      pointer-events: none;
+      opacity: 0.5;
+      background: #CCC;
+    }
+  }
+
+  .thead {
+    width: 100%;
+    margin: auto;
+  }
+
+  .empty {
+    min-width: 205px;
+    width: 10%;
+    justify-content: space-around;
+  }
+
+  .row {
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+  }
+
+  .line {
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  button {
+    margin: 5px 0;
+  }
+
+  .content {
+    margin: 5px 0;
+  }
+
+  .title {
+    overflow: hidden;
+    width: 10%;
+    white-space: nowrap;
+  }
+
+  .text {
+    overflow: hidden;
+    width: 50%;
+    white-space: nowrap;
+    font-size: 28px;
+    font-weight: 500;
+    height: 42px;
+
+    .thead {
+      width: 45%;
+    }
+  }
+
+  .date {
+    overflow: hidden;
+    width: 150px;
+    white-space: nowrap;
+
+    &.thead {
+      width: 15%;
+      min-width: 150px;
+    }
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    height: 15vh;
+  }
+
+  .form_block {
+    background: white;
+    position: relative;
+    z-index: 200;
+    width: 620px;
+    margin: 2vh auto;
+    border-radius: 5px;
+    padding: 20px;
+
+    .buttons_row {
+      width: 25%;
+    }
+
+    .jodit_statusbar {
+      display: none !important;
+    }
+
+    .jodit_wysiwyg {
+      height: 200px !important;
+      overflow: scroll;
+    }
+  }
+
+  .overflow {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 27vh;
+    margin: 1vh auto;
+  }
+
+  .img_container {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+      background-color: #f3f0ec;
+    }
+
+    &.checked {
+      background: grey;
+    }
+
+    img {
+      height: 25vh;
+    }
+  }
+
+  input[type=file] {
+    width: 100px;
+  }
+
+  .img_block {
+    width: 80%;
+    height: 100px;
+  }
+
+  .browse_row {
+    display: flex;
+  }
+
+  .prosto_block {
+    height: 2000px;
+    width: 1000px;
+    border: 2px black solid;
+  }
+
+  .cancel {
+    cursor: pointer;
+    margin-left: 2px;
+    width: 15px;
+    height: 15px;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  .add_news {
+    margin: 40px 0;
+  }
+
+  .button_block {
+    margin: 10px auto;
+    width: 260px;
+    justify-content: space-around;
+    display: flex;
+  }
+
+  form {
+    width: 90%;
+    margin: auto;
+  }
+}

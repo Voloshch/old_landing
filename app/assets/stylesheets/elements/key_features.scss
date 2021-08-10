@@ -1,0 +1,46 @@
+#key_features {
+  background-color: #f9f9f9;
+
+  .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .row {
+      .text {
+        margin-left: auto;
+        width: 25%;
+      }
+      h2 {
+        margin-bottom: 5%;
+      }
+      p {
+        margin-top: 1%;
+      }
+      .dashboard {
+        width: 25%;
+        margin-left: 3%;
+        margin-right: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+      
+      @media (max-width: 1199px) {
+        margin-top: 0px;
+
+        .text {
+          margin-left: 4%;
+          width: 100%;
+        }
+        h2 {
+          text-align: center;
+        }
+
+        .dashboard {
+          display: none;
+        }
+      }
+    }
+  }
+}

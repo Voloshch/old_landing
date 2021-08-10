@@ -1,0 +1,48 @@
+.migrator-img {
+  padding: 7% 0;
+  text-align: center;
+
+  .row {
+     margin: 2% auto;
+     display: flex;
+     justify-content: center;
+  }
+
+  .practice_block {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 13%;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    box-shadow: 0px -4px 25px #FFFFFF, 0px 2px 10px rgba(104, 107, 123, 0.55);
+    border-radius: 5px;
+  }
+
+  .practice_block:hover {
+    box-shadow: 0px -4px 25px #FFFFFF, 0px 2px 10px rgba(60, 62, 70, 0.55);
+    padding-bottom: 3%;
+  }
+
+  img {
+    width: 122px;
+    height: 114px;
+  }
+
+  .cont {
+    margin: 0 30px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  p {
+    margin-top: 6%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

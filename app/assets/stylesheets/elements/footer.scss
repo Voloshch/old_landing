@@ -1,0 +1,172 @@
+footer {
+  position: relative;
+  color: white;
+  background-image: asset-url("landing/footer.png");
+  background-size: cover;
+  margin-top: 4px;
+  margin: 0;
+
+  .container {
+    color: white;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .normal {
+    font-weight: normal;
+  }
+  
+  h1 {
+    font-size: clamp(165%, 3vw, 600%);
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: clamp(40px, 3vw, 48px);
+    font-weight: 800;
+  }
+  
+  h3 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  h4 {
+    font-size: clamp(20px, 2vw, 24px);
+    line-height: 29px;
+  }
+  
+  h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  h6 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .small-font {
+    font-size: 14px;
+  }
+
+  .container {
+      padding-bottom: 4px;
+  }
+
+  .top {
+      padding-top: 3rem;
+      column-gap: 6rem;
+      row-gap: 3rem;
+
+      div {
+          display: inherit;
+          flex-wrap: wrap;
+          margin: auto;
+          align-items: center;
+          column-gap: 1rem;
+          justify-content: center;
+          row-gap: 1rem;
+      }
+
+      button {
+          height: min-content;
+      }
+  }
+
+  .middle {
+      padding: 0 5%;
+      margin-top: 5%;
+      column-gap: 4rem;
+
+      h6 {
+          margin-bottom: 2rem;
+      }
+
+      div {
+          display: inherit;
+          flex-direction: column;
+      }
+
+      a, p {
+          line-height: 30px;
+          font-weight: 300;
+      }
+
+      .contacts {
+          margin-left: 6rem;
+      }
+  }
+
+  .bottom {
+      padding: 6rem 5% 2rem;
+      align-items: flex-end;
+      row-gap: 2rem;
+      column-gap: 10%;
+
+      .rights {
+          display: inherit;
+          align-items: flex-end;
+          flex-wrap: wrap;
+
+          p {
+              color: #5F5F5F;
+          }
+      }
+
+      h3 {
+          line-height: 36px;
+          margin-right: 0.5rem;
+      }
+
+      .policies {
+          display: flex;
+          column-gap: 2rem;
+      }
+  }
+
+  img {
+      position: absolute;
+      z-index: -1;
+  }
+
+  @media (max-width: 1023px) {
+      .middle {
+          padding: 0;
+
+          div {
+              width: 100%;
+
+              h6 {
+                  margin: 0;
+                  padding: 1rem 5%;
+                  cursor: pointer;
+              }
+
+              .hidden-menu {
+                  padding: 1rem;
+                  background: linear-gradient(180deg, #3C00BA 0%, #5E01F6 100%);
+
+                  &.hidden {
+                      display: none;
+                  }
+              }
+
+              a {
+                  width: 100%;
+                  padding: 0 6%;
+              }
+
+              p {
+                  padding: 0 5%;  
+              }
+          }
+
+          .contacts {
+              margin: 0;
+          }
+      }
+  }
+}

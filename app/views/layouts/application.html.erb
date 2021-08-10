@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ICDC</title>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jodit/3.1.39/jodit.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <%= javascript_pack_tag 'jodit', defer: true %>
+    <%= javascript_pack_tag 'react-dom', defer: true %>
+    <%= javascript_pack_tag 'reactstrap', defer: true %>
+    <%= javascript_pack_tag 'vendor', defer: true %>
+    <%= javascript_pack_tag 'app', defer: true %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>    
+    <%= favicon_link_tag asset_path('icons/cloud.png') %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= render 'yandex_metrika_prod' if Rails.env.production? %>
+    <%= render 'google_analytics_prod' if Rails.env.production? %>
+  </body>
+
+</html>

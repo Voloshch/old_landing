@@ -1,0 +1,21 @@
+.block {
+  color: #414554;
+  margin: 0 auto;
+  width: 540px;
+
+  &.benefits {
+    width: 49%;
+  }
+
+  .strong_p {
+    font-weight: 500;
+  }
+
+  @media (max-width: 991px) {
+    width: 90%;
+
+    &.benefits {
+      width: 90%;
+    }
+  }
+}

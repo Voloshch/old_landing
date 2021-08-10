@@ -1,0 +1,62 @@
+.blue {
+  background: linear-gradient(90deg, #449bf9 0%, #4776f9 100%);
+  color: white;
+  box-shadow: none !important;
+  border: none;
+
+  &.btn-secondary:not(:disabled):not(.disabled):active {
+    background: linear-gradient(90deg, #449bf9 0%, #4776f9 100%);
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #4fccff 0%, #61a2ff 100%);
+  }
+  &.btn-secondary:not(:disabled):not(.disabled):active:hover {
+    background: linear-gradient(90deg, #0c72cf 0%, #0e54cf 100%);
+  }
+}
+
+.transparent {
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.general_button {
+  cursor: pointer;
+  height: 60px;
+  width: 222px;
+  font-weight: 500;
+  font-size: 22px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.header_button {
+  width: 165px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1199px) {
+  .header_button {
+    height: 60px;
+    width: 222px;
+    border-radius: 25px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header_button, .general_button {
+    border-radius: 25px;
+    width: 195px;
+    height: 50px;
+    font-size: 18px;
+  }
+}

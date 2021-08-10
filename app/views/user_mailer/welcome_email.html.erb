@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body style="font-family: 'Montserrat', sans-serif; color: black; display: flex;">
+    <div style="max-width: 933px; margin: auto; width: 100%;">
+      <div style="border: 1px solid #BEBEBE; box-sizing: border-box; border-radius: 9px; padding: 2% 5% 3% 4%; ">
+        <div style="display: flex;">
+          <img src='https://ibacloud.by/static/images/email_logo.png'
+              width="12%"
+              style="margin-top: 5%; height: max-content;"
+              alt="img" />
+          <img src='https://ibacloud.by/static/images/email_main.png'
+              width="64%"
+              style="margin: 0 auto 0 10%;"
+              alt="img" />
+        </div>
+        <div style="background: white; width: 100%;">
+          <h1 style="color: #414554;font-size: 16px;">
+            <%= t('.greeting') %>
+          </h1>
+          <p style="color: #414554; font-size: 16px; color: black">
+            <%= t('.content') %>
+          </p>
+        </div>
+      </div>
+      <p style="width: 100%; text-align: center; font-size: 16px; margin: 0;">
+        <%= t('.copyright1') %>
+        <%= Time.current.year %>
+        <%= t('.copyright2') %>
+      </p>
+    </div>
+  </body>
+</html>

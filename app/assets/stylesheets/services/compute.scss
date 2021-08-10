@@ -1,0 +1,27 @@
+.for_whom_background {
+  .row {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .image_hidden {
+    margin-left: auto;
+  }
+
+  .for_whom_text {
+    width: 700px;
+    margin-right: auto;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+
+  @media (max-width: 991px) {
+    .image_hidden {
+      display: none;
+    }
+
+    .for_whom_text {
+      width: 100%;
+    }
+  }
+}

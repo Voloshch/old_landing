@@ -1,0 +1,36 @@
+#try-cloud-section {
+  background: #F9F9F9;
+
+  .container {
+    width: 1150px;
+    padding: 5% 0%;
+    text-align: center;
+  }
+
+  .row {
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 1199px) {
+    background-image: linear-gradient(to right, #222db4, #222db4, #1b3ec5, #1b3ec5);
+
+    h2 {
+      color: white;
+    }
+    
+    .container {
+      width: 95%;
+      padding: 40px 0;
+      color: white;
+    }
+
+    .row {
+      width: 100%;
+      margin: unset;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}

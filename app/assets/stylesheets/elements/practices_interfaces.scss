@@ -1,0 +1,83 @@
+.change_practice {
+  padding: 5% 0;
+  text-align: center;
+  background: #F9F9F9;
+
+  .row {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .practice_block {
+    padding-top: 3%;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  img {
+    width: 135px;
+  }
+
+  .cont {
+    width: 33.3%;
+
+    &.storage .practice_block{
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f0eded;
+      }
+    }
+
+    &.devops a {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+  p {
+    color: #4C505E;
+    margin-top: 6%;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 1199px) {
+    .row {
+      width: 100%;
+    }
+  
+    .cont.devops {
+      width: 100%;
+      
+      .practice_block {
+        width: 90%;
+        text-align: center;
+        margin: 5% auto;
+      }
+    }
+  
+    p {
+      margin-top: unset;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cont {
+      width: 100%;
+      
+      .practice_block {
+        width: 90%;
+        text-align: center;
+        margin: 5% auto;
+      }
+    }
+
+    img {
+      width: 25%;
+    }
+  }
+}

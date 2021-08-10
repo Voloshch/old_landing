@@ -1,0 +1,89 @@
+.artifactory {
+  .container {
+    padding: 0 9%;
+  }
+
+  footer .container {
+    padding: 3rem 5% 4px 5%;
+  }
+
+  .wrapper {
+    padding: 5% 0;
+  }
+
+  .tools {
+    background: #F9F9F9;
+  
+    .tools_img {
+      text-align: center;
+    }
+  
+    img {
+      width: 70%;
+      margin-bottom: 5%;
+    }
+  }
+  
+  .supply_chain {
+    .description {
+      width: 97%;
+    }
+
+    .supply_img {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .integration {
+    background: #F9F9F9;
+  
+    .integration_img {
+      margin-left: auto;
+      text-align: right;
+    }
+  
+    .integration_text {
+      width: 670px;
+      margin-left: 36px;
+      margin-right: auto;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .provision {
+      .row {
+        padding-top: unset;
+
+        h2 {
+          padding-top: 5%;
+        }
+      }
+    }
+
+    .supply_chain .supply_img {
+      display: none;
+    }
+
+    .integration {
+      .integration_text {
+        width: 100%;
+        margin: unset;
+        padding: 0 15px;
+      }
+
+      .integration_img {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+        
+        img {
+          width: 35%;
+        }
+      }
+    }
+  }
+}

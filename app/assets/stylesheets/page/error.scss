@@ -1,0 +1,63 @@
+.error_page {
+  background: #FFFFFF;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  #picture {
+    width: 100%;
+    margin-top: 5%;
+
+    img {
+      margin-top: 40px;
+      max-width: 310px;
+    }
+  }
+
+  button {
+    border-radius: 25px;
+    border: 2px solid #4479F9;
+    font-size: 20px;
+    margin-right: 1%;
+    line-height: 1em;
+    width: 220px;
+    height: 55px;
+  }
+
+  .button {
+
+    button {
+      color: white;
+      background: #4479F9;
+  
+      &:hover {
+        border: 2px solid #4479F9;
+        color: #4479F9;
+        background: transparent;
+      }
+    }
+  }
+
+  p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #414554;
+    margin-bottom: 2%;
+  }
+
+  @media (max-width: 1199px) {
+    button {
+      margin-bottom: 2%;
+      font-size: 27px;
+      width: 240px;
+      border-radius: 15px;
+      height: 70px;
+    }
+
+    p {
+      font-size: 30px;
+      margin-top: 0%;
+    }
+  }
+}

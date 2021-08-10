@@ -1,0 +1,56 @@
+<h2>Поступила новая заявка на получение доступа icdc.io</h2>
+
+<table>
+  <tr>
+    <th>Почта</th>
+    <td><%= @user[:email] %></td>
+  </tr>
+  <tr>
+    <th>Имя пользователя</th>
+    <td><%= @user[:message] %></td>
+  </tr>
+  <tr>
+    <th>Компания</th>
+    <td><%= @user[:language] %></td>
+  <tr>
+</table>
+<div>
+<h2>Cloud type: <%= @services[:type] %></h2>
+<h2>Support: <%= @services[:subscription] %></h2>
+<h2>Price: <%= @services[:price] %>$</h2>
+<h2>Compute:</h2>
+<p>Nodes <%= @services[:compute][:node] %></p>
+<p>CPU <%= @services[:compute][:cpu] %>Cores</p>
+<p>RAM <%= @services[:compute][:ram] %>GiB</p>
+<p>Internal Disk <%= @services[:compute][:disk] %>GiB</p>
+<p>GPU <%= @services[:compute][:gpu] %>GiB</p>
+<p>SSD Storage Usable <%= @services[:compute][:usable] %>GiB</p>
+<p>SSD Storage Usable in % <%= @services[:compute][:space] %>%</p>
+<p>HDD Storage Usable <%= @services[:compute][:hddUsable] %>GiB</p>
+<p>HDD Storage Usable in % <%= @services[:compute][:hdd] %>%</p>
+<h2>Networking</h2>
+<p>Bandwidth <%= @services[:networking][:bandwidth] %></p>
+<p>ipv4 <%= @services[:networking][:ipv4] %></p>
+<p>Public Autonomous System <%= @services[:networking][:isAnonymus] %></p>
+<h2>Storage</h2>
+<p>External Storage: <%= @services[:storage][:isExternal] %></p>
+<p>Mix SSD and HDD on same nodes: <%= @services[:storage][:isMix] %></p>
+<h3>SSD</h3>
+<p>Nodes: <%= @services[:storage][:ssd][:node] %></p>
+<p>Node size: <%= @services[:storage][:ssd][:size] %></p>
+<p>ISCSI: <%= @services[:storage][:ssd][:iscsi] %>%</p>
+<p>S3: <%= @services[:storage][:ssd][:s3] %>%</p>
+<h3>HDD</h3>
+<p>Nodes: <%= @services[:storage][:hdd][:node] %></p>
+<p>Node size: <%= @services[:storage][:hdd][:size] %></p>
+<p>ISCSI: <%= @services[:storage][:hdd][:iscsi] %>%</p>
+<p>S3: <%= @services[:storage][:hdd][:s3] %>%</p>
+<h2>Code: <%= @services[:code] %></h2>
+<h2>Disk: <%= @services[:disk] %></h2>
+<h2>Artifactory: <%= @services[:artifactory] %></h2>
+<h2>OpenShift: <%= @services[:openshift] %></h2>
+<h2>Compliance: <%= @services[:compliance] %></h2>
+<h2>DevOps: <%= @services[:devops] %></h2>
+<h2>Projects: <%= @services[:projects] %></h2>
+</div>
+<h2></h2>

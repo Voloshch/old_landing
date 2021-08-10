@@ -1,0 +1,30 @@
+#scroll_button {
+   .scroll {
+    background-image: asset-url("icons/scroll.png");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    width: 90px;
+    z-index: 99999;
+    height: 91px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background-color: transparent;
+    background-size: 75% !important;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media (max-width: 450px) {
+    .scroll {
+      display: none;
+    }
+  }
+}

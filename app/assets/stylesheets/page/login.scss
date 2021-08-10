@@ -1,0 +1,27 @@
+.login {
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+  background-color: #e9ebee;
+  margin-top: 20vh;
+  border-radius: 5px;
+
+  input {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  button {
+    margin: 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+#section-about-services {
+  padding: 5% 0;
+  background: #F9F9F9;
+
+  h2 {
+    text-align: center;
+  }
+
+  .line {
+    margin: 0 auto;
+    border: 1px solid #E3E4E8;
+    width: 1000px;
+    height: 1px;
+  }
+
+  .compliance {
+    width: 380px;
+  }
+
+  .row {
+    width: 1000px;
+    margin: 60px auto;
+    
+    a p {
+      color: #414554; 
+      font-weight: 500;
+      text-decoration-line: underline;
+
+      &:hover {
+        color: #4776f9;
+      }
+    }
+  }
+
+  .img_col {
+    text-align: center;
+  }
+
+  @media (max-width: 1199px) {
+    .row {
+      width: unset;
+    }
+
+    .img_col {
+      margin-bottom: 3%;
+    }
+
+    .line {
+      width: 90%;
+    }
+
+    .col {
+      flex: 0 0 100%;
+      max-width: 100%;       
+    }
+  }
+
+  @media (max-width: 700px) {
+    img {
+      width: 60%;
+
+      &.compliance {
+        width: 60%;
+      }
+    }
+  }
+}
